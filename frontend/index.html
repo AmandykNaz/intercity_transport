@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Межгородные перевозки</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Система межгородных перевозок</h1>
+  </header>
+
+  <main>
+    <section class="search">
+      <h2>Поиск рейсов</h2>
+      <form id="searchForm">
+        <label for="departure">Город отправления:</label>
+        <input type="text" id="departure" name="departure" required>
+        
+        <label for="destination">Город назначения:</label>
+        <input type="text" id="destination" name="destination" required>
+        
+        <label for="date">Дата отправления:</label>
+        <input type="date" id="date" name="date" required>
+
+        <button type="submit">Найти рейсы</button>
+      </form>
+    </section>
+
+    <section class="results">
+      <h2>Доступные рейсы</h2>
+      <ul id="flightsList">
+        <!-- Рейсы будут отображаться здесь -->
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Межгородные перевозки</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <section class="auth">
+    <h2>Регистрация / Вход</h2>
+    <form id="authForm">
+      <label for="username">Имя пользователя:</label>
+      <input type="text" id="username" name="username" required>
+      
+      <label for="password">Пароль:</label>
+      <input type="password" id="password" name="password" required>
+  
+      <button type="submit">Войти</button>
+    </form>
+  </section>
+  
+</body>
+</html>
+
